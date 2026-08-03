@@ -1,3 +1,8 @@
+hl.unbind("SUPER + B")
+hl.unbind("SUPER + O")
+hl.unbind("SUPER + N")
+hl.unbind("CTRL + SUPER + S")
+
 require("hyprland.lib")
 require("hyprland.variables")
 if is_file_exists(HOME .. "/.config/hypr/custom/variables.lua") then
@@ -20,7 +25,7 @@ local qsIsAlive = qsIpcCall .. " TEST_ALIVE"
 hl.bind("SUPER + T", hl.dsp.exec_cmd(terminal))
 hl.bind("CTRL + ALT + T", hl.dsp.exec_cmd(terminal))
 hl.bind("SUPER + E", hl.dsp.exec_cmd(fileManager), { description = "App: File manager" })
--- hl.bind("SUPER + W", hl.dsp.exec_cmd(browser), { description = "App: Browser" })
+hl.bind("SUPER + W", hl.dsp.exec_cmd(browser), { description = "App: Browser" })
 hl.bind("SUPER + B", hl.dsp.exec_cmd("brave"), { description = "App: Brave" })
 hl.bind("SUPER + C", hl.dsp.exec_cmd(codeEditor), { description = "App: Code editor" })
 hl.bind("SUPER + O", hl.dsp.exec_cmd("obsidian"), { description = "App: Obsidian" })
